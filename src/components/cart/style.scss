@@ -1,0 +1,48 @@
+.cart {
+  background-color: gray;
+  border-radius: 10px;
+  padding: 20px;
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-bottom: 20px;
+    .letter {
+      background: purple;
+      width: 60px;
+      height: 60px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      font-size: 30px;
+      text-shadow: 0 0 20px white;
+    }
+    .info {
+      font-size: 20px;
+    }
+  }
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    .field {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  .status{
+    display: flex;
+    gap: 10px;
+    p{
+      padding: 6px;
+      border-radius: 10px;
+    }
+  }
+  .top-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
