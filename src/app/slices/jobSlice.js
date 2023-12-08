@@ -63,7 +63,7 @@ const jobsSlice = createSlice({
       state.jobs = state.mainJobs;
     },
     deleteJobs: (state, { payload }) => {
-      // Immer kullanarak state'in derin bir kopyasını oluştur
+    
       state.jobs = state.jobs.filter((i) => i.id !== payload);
       state.mainJobs = state.mainJobs.filter((i) => i.id !== payload.id);
     },
